@@ -1,0 +1,26 @@
+CREATE TABLE clothes(id INTEGER, article TEXT, brand TEXT, quantity INTEGER, color TEXT, price INTEGER);
+
+INSERT INTO clothes VALUES(1, "Jeans", "Levis", 3, "blue", 15);
+INSERT INTO clothes VALUES(2, "Sweater", "Polo", 7, "Red", 20);
+INSERT INTO clothes VALUES(3, "Hat", "Urban",9, "Black", 40);
+INSERT INTO clothes VALUES(4, "Socks", "Nike", 9, "white", 10);
+INSERT INTO clothes VALUES(5, "Sweatpants", "Underarmor", 12, "Black",11);
+INSERT INTO clothes VALUES(6, "Tshirt", "Nike", 5, "Blue",5);
+INSERT INTO clothes VALUES(7, "underwear", "CK", 15, "white",30);
+INSERT INTO clothes VALUES(8, "Watch", "Rolex", 1, "Silver",9);
+INSERT INTO clothes VALUES(9, "hat", "mugiwara", 1, "Gold",20);
+INSERT INTO clothes VALUES(10, "Overalls", "Usopp", 11, "Brown",45);
+INSERT INTO clothes VALUES(11, "Headband", "Hidden_Leaf", 20, "Silver",50);
+INSERT INTO clothes VALUES(12, "Shirt", "Ralph_Lauren", 15, "Green",20);
+INSERT INTO clothes VALUES(13, "Jeans", "Dockers", 24, "Khaki",24);
+INSERT INTO clothes VALUES(14, "Socks", "Nike", 25, "black",12);
+INSERT INTO clothes VALUES(15, "Belt", "Levis", 12, "Brown",10);
+
+--display the database ordered by price. 
+SELECT * FROM clothes
+ORDER BY price desc;
+
+--display all clothes greater than or equal to 20 dollars in descending order
+SELECT * FROM clothes
+WHERE price >= 20
+ORDER BY price desc;
